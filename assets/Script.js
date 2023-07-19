@@ -14,7 +14,7 @@ document.getElementById("claim-button").addEventListener("click", function () {
 
     // Kiểm tra và hiển thị thông báo lỗi nếu cần thiết
     if (firstName === "") {
-        document.getElementById("first-name-error").textContent = "Please enter your first name.";
+        document.getElementById("first-name-error").textContent = "First Name cannot be empty.";
         document.getElementById("first-name").classList.add("error");
         document.getElementById("first-name-icon").style.display = "inline-block";
     } else {
@@ -23,7 +23,7 @@ document.getElementById("claim-button").addEventListener("click", function () {
     }
 
     if (lastName === "") {
-        document.getElementById("last-name-error").textContent = "Please enter your last name.";
+        document.getElementById("last-name-error").textContent = "Lasst Name cannot be empty.";
         document.getElementById("last-name").classList.add("error");
         document.getElementById("last-name-icon").style.display = "inline-block";
     } else {
@@ -32,7 +32,7 @@ document.getElementById("claim-button").addEventListener("click", function () {
     }
 
     if (email === ""  || !emailRegex.test(email)) {
-        document.getElementById("email-error").textContent = "Please enter your email address.";
+        document.getElementById("email-error").textContent = "Looks like this is not an email.";
         document.getElementById("email").classList.add("error");
         document.getElementById("email-icon").style.display = "inline-block";
     } else {
@@ -41,7 +41,7 @@ document.getElementById("claim-button").addEventListener("click", function () {
     }
 
     if (password === "") {
-        document.getElementById("password-error").textContent = "Please enter your password.";
+        document.getElementById("password-error").textContent = "Passoword cannot be empty.";
         document.getElementById("password").classList.add("error");
         document.getElementById("password-icon").style.display = "inline-block";
     } else {

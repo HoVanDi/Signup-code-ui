@@ -1,193 +1,193 @@
 :root {
-    --main-color: #fff;
+  --main-color: #fff;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    background: url(./images/Form-image.svg), #FF7A7A 50% / cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  background: url(./images/Form-image.svg), #ff7a7a 50% / cover no-repeat;
 }
 
 .container {
-    margin: 0 auto;
-    display: flex;
+  margin: 0 auto;
+  display: flex;
 }
 
 .container .signup {
-    display: flex;  
+  display: flex;
 }
 
 .signup .content {
-    display: flex;
-    align-items: center;
-    margin-right: 47px;
+  display: flex;
+  align-items: center;
+  margin-right: 47px;
 }
 
 .container .content .title {
-    color: var(--main-color);
-    font-size: 39px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    max-width: 333px;
-    line-height: 40px;
+  color: var(--main-color);
+  font-size: 39px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  max-width: 333px;
+  line-height: 40px;
 }
 
 .container .content .title.subtitle {
-    margin-top: 41px;
-    max-width: 488px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
+  margin-top: 41px;
+  max-width: 488px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .container .signup .top-btn {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    padding: 17px 95px 16px 95px;
-    background-color: #6055A5;
-    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.12);
-    border-radius: 8px;
-    color: var(--main-color);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 17px 95px 16px 95px;
+  background-color: #6055a5;
+  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  color: var(--main-color);
 }
 
 .form .body-form {
-    margin-top: 24px;
-    padding-top: 32px;
-    background-color: var(--main-color);
-    border-radius: 8px;
-    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.12);
+  margin-top: 24px;
+  padding-top: 32px;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.12);
 }
 
 .form .form-group {
-    padding: 0px 32px 21px 32px;
-    position: relative;
+  padding: 0px 32px 21px 32px;
+  position: relative;
 }
 
 input.form-control {
-    border-radius: 4px;
-    border: 1px solid #B9B6D3;
-    font-family: 'Poppins', sans-serif;
-    padding: 17px 256px 17px 17px;
-    color: #777583;
-    font-size: 14px;
-    font-weight: 700;
+  border-radius: 4px;
+  border: 1px solid #b9b6d3;
+  font-family: "Poppins", sans-serif;
+  padding: 17px 256px 17px 17px;
+  color: #777583;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .form .footer-form {
-    margin-top: 21px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+  margin-top: 21px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .form .footer-form span.btn-claim {
-    border-radius: 8px;
-    border: 1px solid #2FB67C;
-    background: #38CC8C;
-    box-shadow: 0px 2px 0px 0px #2FB67C;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 20px 131px 20px;
+  border-radius: 8px;
+  border: 1px solid #2fb67c;
+  background: #38cc8c;
+  box-shadow: 0px 2px 0px 0px #2fb67c;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px 131px 20px;
 }
 
 .form .footer-form span.btn-claim:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .form .footer-form .form-text {
-    font-size: 12px;
-    color: #B9B6D3;
-    padding: 34px 0;
+  font-size: 12px;
+  color: #b9b6d3;
+  padding: 34px 0;
 }
 
 span.form-text_terms {
-    color: #FF7A7A;
+  color: #ff7a7a;
 }
 
 .error-message {
-    color: #FF7A7A;
-    font-size: 12px;
-    position: absolute;
-    right: 32px;
+  color: #ff7a7a;
+  font-size: 12px;
+  position: absolute;
+  right: 32px;
 }
 
 .body-form .form-group img.icon-error_image {
-    margin-left: -30px;
+  position: absolute;
+  top: 12px;
+  right: 40px;
 }
 
 .error {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 .body-form .form-group .box-form_input {
-    display: flex;
+  display: flex;
 }
 
 .body-form .form-group .box-form_input .icon-error_image {
-    display: none;
+  display: none;
 }
 
-
 @media screen and (max-width: 400px) {
-    .container .signup {
-        display: block;
-    }
+  .container .signup {
+    display: block;
+  }
 
-    .signup .content {
-        margin-right: 0px;
-    }
+  .signup .content {
+    margin-right: 0px;
+  }
 
-    .container .content .title {
-        padding: 0 30px;
-        max-width: 340px;
-        text-align: center;
-    }
+  .container .content .title {
+    padding: 0 30px;
+    max-width: 340px;
+    text-align: center;
+  }
 
-    .container .content .title.subtitle {
-        max-width: 352px;
-        margin-top: 15px;
-    }
+  .container .content .title.subtitle {
+    max-width: 352px;
+    margin-top: 15px;
+  }
 
-    .container .signup .top-btn {
-        padding: 23px 71px;
-        display: grid;
-        margin-top: 43px;
-        line-height: 24px;
-    }
+  .container .signup .top-btn {
+    padding: 23px 71px;
+    display: grid;
+    margin-top: 43px;
+    line-height: 24px;
+  }
 
-    input.form-control {
-        padding: 18px 92px 18px 17px;
-        font-size: 12px;
-    }
+  input.form-control {
+    padding: 19px 99px 18px 17px;
+    font-size: 12px;
+  }
 
-    .form .footer-form span.btn-claim {
-        padding: 21px 37px;
-    }
+  .form .footer-form span.btn-claim {
+    padding: 21px 37px;
+  }
 
-    .form .footer-form .form-text {
-        display: grid;
-    }
+  .form .footer-form .form-text {
+    display: grid;
+  }
 
-    .form span:nth-child(2) {
-        font-weight: 700;
-    }
+  .form span:nth-child(2) {
+    font-weight: 700;
+  }
 
-    .form {
-        max-width: 340px;
-        margin: 0 auto;
-    }
+  .form {
+    max-width: 340px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 1133px) {
-    .container .signup {
-        display: block;
-    }
+  .container .signup {
+    display: block;
+  }
 
-    .signup .content {
-        margin-right: 0;
-    }
+  .signup .content {
+    margin-right: 0;
+  }
 
-    .container .content .title {}
 }
