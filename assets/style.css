@@ -10,19 +10,20 @@ body {
   background: url(./images/Form-image.svg), #ff7a7a 50% / cover no-repeat;
 }
 
-.container {
+.container {  
   margin: 0 auto;
-  display: flex;
+  max-width: 1096px;
 }
 
 .container .signup {
+  letter-spacing: 1px;
   display: flex;
+  gap: 80px;
 }
 
 .signup .content {
   display: flex;
   align-items: center;
-  margin-right: 47px;
 }
 
 .container .content .title {
@@ -30,19 +31,19 @@ body {
   font-size: 39px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  max-width: 333px;
   line-height: 40px;
+  margin-bottom: 41px;
 }
 
 .container .content .title.subtitle {
-  margin-top: 41px;
-  max-width: 488px;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  margin: 0;
 }
 
 .container .signup .top-btn {
+  margin-bottom: 24px;
   text-align: center;
   font-family: "Poppins", sans-serif;
   padding: 17px 95px 16px 95px;
@@ -53,7 +54,6 @@ body {
 }
 
 .form .body-form {
-  margin-top: 24px;
   padding-top: 32px;
   background-color: var(--main-color);
   border-radius: 8px;
@@ -63,13 +63,15 @@ body {
 .form .form-group {
   padding: 0px 32px 21px 32px;
   position: relative;
+  min-width: 464px;
 }
 
 input.form-control {
+  width: 100%;
   border-radius: 4px;
   border: 1px solid #b9b6d3;
   font-family: "Poppins", sans-serif;
-  padding: 17px 256px 17px 17px;
+  padding: 17px 39px 17px 17px;
   color: #777583;
   font-size: 14px;
   font-weight: 700;
@@ -89,7 +91,7 @@ input.form-control {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
-  padding: 20px 131px 20px;
+  padding: 20px 121px 20px;
 }
 
 .form .footer-form span.btn-claim:hover {
@@ -107,6 +109,7 @@ span.form-text_terms {
 }
 
 .error-message {
+  font-family: "Poppins", sans-serif;
   color: #ff7a7a;
   font-size: 12px;
   position: absolute;
@@ -119,9 +122,6 @@ span.form-text_terms {
   right: 40px;
 }
 
-.error {
-  border: 1px solid red;
-}
 
 .body-form .form-group .box-form_input {
   display: flex;
@@ -131,7 +131,11 @@ span.form-text_terms {
   display: none;
 }
 
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 768px) {
+  .container{
+    max-width: 488px;
+  }
   .container .signup {
     display: block;
   }
@@ -141,53 +145,45 @@ span.form-text_terms {
   }
 
   .container .content .title {
-    padding: 0 30px;
     max-width: 340px;
+    margin-bottom: 15px;
     text-align: center;
   }
 
   .container .content .title.subtitle {
-    max-width: 352px;
-    margin-top: 15px;
+    margin-bottom: 44px;
   }
 
   .container .signup .top-btn {
-    padding: 23px 71px;
-    display: grid;
-    margin-top: 43px;
+    padding: 17px 70px;
     line-height: 24px;
-  }
-
-  input.form-control {
-    padding: 19px 99px 18px 17px;
-    font-size: 12px;
-  }
-
-  .form .footer-form span.btn-claim {
-    padding: 21px 37px;
-  }
-
-  .form .footer-form .form-text {
-    display: grid;
-  }
-
-  .form span:nth-child(2) {
-    font-weight: 700;
   }
 
   .form {
     max-width: 340px;
     margin: 0 auto;
   }
-}
 
-@media screen and (max-width: 1133px) {
-  .container .signup {
+  input.form-control {
+    padding: 19px 38px 18px 17px;
+    font-size: 12px;
+  }
+
+  .form .form-group {
+    min-width: auto;
+  }
+
+  .form .footer-form span.btn-claim {
+    padding: 21px 27px;
+  }
+
+  .form .footer-form .form-text {
+line-height: 26px;
+    padding: 43px 0 32px;
+  }
+
+  .form span:nth-child(2) {
+    font-weight: 700;
     display: block;
   }
-
-  .signup .content {
-    margin-right: 0;
-  }
-
 }
