@@ -10,7 +10,7 @@ body {
   background: url(./images/Form-image.svg), #ff7a7a 50% / cover no-repeat;
 }
 
-.container {  
+.container {
   margin: 0 auto;
   max-width: 1096px;
 }
@@ -102,10 +102,12 @@ input.form-control {
   font-size: 12px;
   color: #b9b6d3;
   padding: 34px 0;
+  letter-spacing: 0.5px;
 }
 
-span.form-text_terms {
+span.form-text-terms {
   color: #ff7a7a;
+  font-weight: 700;
 }
 
 .error-message {
@@ -116,26 +118,27 @@ span.form-text_terms {
   right: 32px;
 }
 
-.body-form .form-group img.icon-error_image {
+.body-form .form-group img.icon-error-image {
   position: absolute;
   top: 12px;
   right: 40px;
 }
 
 
-.body-form .form-group .box-form_input {
+.body-form .form-group .box-form-input {
   display: flex;
 }
 
-.body-form .form-group .box-form_input .icon-error_image {
+.body-form .form-group .box-form-input .icon-error-image {
   display: none;
 }
 
 
 @media screen and (max-width: 768px) {
-  .container{
-    max-width: 488px;
+  .container {
+    padding: 90px 30px 49px;
   }
+
   .container .signup {
     display: block;
   }
@@ -145,7 +148,6 @@ span.form-text_terms {
   }
 
   .container .content .title {
-    max-width: 340px;
     margin-bottom: 15px;
     text-align: center;
   }
@@ -155,12 +157,11 @@ span.form-text_terms {
   }
 
   .container .signup .top-btn {
-    padding: 17px 70px;
+    padding: 17px 0px;
     line-height: 24px;
   }
 
   .form {
-    max-width: 340px;
     margin: 0 auto;
   }
 
@@ -178,7 +179,7 @@ span.form-text_terms {
   }
 
   .form .footer-form .form-text {
-line-height: 26px;
+    line-height: 26px;
     padding: 43px 0 32px;
   }
 

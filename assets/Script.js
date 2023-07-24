@@ -13,7 +13,7 @@ document.getElementById("claim-button").addEventListener("click", function () {
     document.getElementById("password-error").textContent = "";
 
     // Kiểm tra và hiển thị thông báo lỗi nếu cần thiết
-    if (firstName === "") {
+    if (firstName.trim() === "") {
         document.getElementById("first-name-error").textContent = "First Name cannot be empty.";
         document.getElementById("first-name").classList.add("error");
         document.getElementById("first-name-icon").style.display = "inline-block";
@@ -24,7 +24,7 @@ document.getElementById("claim-button").addEventListener("click", function () {
         document.getElementById("first-name").style.borderColor = '#B9B6D3';
     }
 
-    if (lastName === "") {
+    if (lastName.trim() === "") {
         document.getElementById("last-name").style.borderColor = "#FF7A7A";
         document.getElementById("last-name-error").textContent = "Lasst Name cannot be empty.";
         document.getElementById("last-name").classList.add("error");
@@ -35,7 +35,7 @@ document.getElementById("claim-button").addEventListener("click", function () {
         document.getElementById("last-name").style.borderColor = '#B9B6D3';
     }
 
-    if (email === ""  || !emailRegex.test(email)) {
+    if (email.trim() === ""  || !emailRegex.test(email)) {
         document.getElementById("email").style.borderColor = "#FF7A7A";
         document.getElementById("email-error").textContent = "Looks like this is not an email.";
         document.getElementById("email").classList.add("error");
@@ -46,7 +46,7 @@ document.getElementById("claim-button").addEventListener("click", function () {
         document.getElementById("email").style.borderColor = '#B9B6D3';
     }
 
-    if (password === "") {
+    if (password.trim() === "") {
         document.getElementById("password").style.borderColor = "#FF7A7A";
         document.getElementById("password-error").textContent = "Passoword cannot be empty.";
         document.getElementById("password").classList.add("error");
